@@ -3,9 +3,9 @@ document.getElementById('submit-btn').addEventListener('click', function(){
     const passwordField = document.getElementById('password').value;
 
     if(emailField === 'baperbank@gmail.com' && passwordField === 'lock'){
-        console.log('Valid user');
+        window.location.href = 'bank.html';
     }
     else{
-        console.log('Invalid user!');
+        alert('Worng Password or Email');
     }
 })
